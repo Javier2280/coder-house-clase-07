@@ -36,7 +36,7 @@ function obtenerProductos(aleatorio) {
 
         } else {
             let id = obtenerRandom(0, data.length);
-            let producto = data[id].title;
+            producto = data[id].title;
 
             respuesta = {
                 items: producto
@@ -67,8 +67,7 @@ app.get('/items', (req, res) => {
         visitas1++;
     }
 
-    let texto = JSON.stringify(obtenerProductos(false), null, '\n');
-    res.send(texto);
+    res.send(JSON.stringify(obtenerProductos(false), null, '\n'));
 });
 
 //Item 2 de la consigna
@@ -81,8 +80,7 @@ app.get('/item-random', (req, res) => {
         visitas2++;
     }
 
-    let texto = JSON.stringify(obtenerProductos(true), null, '\n');
-    res.send(texto);
+    res.send(JSON.stringify(obtenerProductos(true), null, '\n'));
 });
 
 //Item 3 de la consigna
