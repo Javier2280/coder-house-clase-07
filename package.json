@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "name": "desafio-servidor-express",
+  "version": "1.0.0",
+  "description": "Desafío entregable del curso de programador backend - clase 07 / npm-express",
+  "main": "servidor-express.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Javier Cabaña",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {}
+}
